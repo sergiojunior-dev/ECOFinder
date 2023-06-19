@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
 import { ContainerPerfil, InputNome, InputEmail, InputSenha, InputNascimento, InputNacionalidade, BotãoSalvar, ContainerLogoPerfil } from "./style";
 import { TextoMinhaLogo, ImagemLogo } from '../../styles/style-Logo';
 export default function Perfil ({navigation}){
@@ -33,13 +33,13 @@ export default function Perfil ({navigation}){
                 placeholder='20/01/1997'
             ></InputNascimento>
 
-            <Text style={style.texto}>PAÍS/ESTADO</Text>
+            <Text style={style.texto}>PAIS/ESTADO</Text>
             <InputNacionalidade
                 placeholder='BRAZIL / RIO DE JANEIRO'
             ></InputNacionalidade>
 
             <BotãoSalvar>
-                <Text>SALVAR MUDANÇAS</Text>
+                <Text style={style.textoSalvar}>SALVAR MUDANCAS</Text>
             </BotãoSalvar>
         </ContainerPerfil>
     
@@ -48,8 +48,12 @@ export default function Perfil ({navigation}){
 
 const style = StyleSheet.create({
     texto: {
-        marginTop:27,
+        marginTop: 20,
+        fontSize: 25,
+        fontFamily: "CuteFont_400Regular",
     },
-
-
-})
+    textoSalvar: {
+        fontSize: 25,
+        fontFamily: "CuteFont_400Regular",
+    }
+});

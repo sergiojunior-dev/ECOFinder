@@ -5,7 +5,7 @@ import { TextoMinhaLogo, ContainerLogo, ImagemLogo, } from "../../styles/style-L
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { requestForegroundPermissionsAsync, getCurrentPositionAsync, watchPositionAsync, LocationAccuracy, LocationObject } from "expo-location";
 import MapView, {Marker} from "react-native-maps";
-import { Column } from "native-base";
+
 export default function MapScreen({ navigation }) {
     const [location, setLocation] = useState(LocationObject);
 
@@ -35,7 +35,6 @@ export default function MapScreen({ navigation }) {
     }, [])
     
     
-
     const Home = () => {
         
         navigation.navigate('Home');
@@ -86,10 +85,7 @@ export default function MapScreen({ navigation }) {
 
 const styles = StyleSheet.create({
     map: {
-        // flex: 1,
         width: 320,
         height: 500,
-
     }
-
 });

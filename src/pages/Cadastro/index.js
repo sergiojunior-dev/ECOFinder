@@ -15,20 +15,20 @@ export default function Cadastro(){
                 placeholder = 'Nome'
             ></InputNome>
 
-            <Text>Digite seu e-mail</Text>
+            <Text style={style.inputTexto}>Digite seu e-mail</Text>
             <InputEmail
                 placeholder = 'E-mail'
             >
             </InputEmail>
 
-            <Text>Digite sua senha</Text>
+            <Text style={style.inputTexto}>Digite sua senha</Text>
             <InputSenha
                 placeholder='Senha'
                 secureTextEntry={true}
             ></InputSenha>
 
             <BotãoCadastrar>
-                <Text>CADASTRAR</Text>
+                <Text style={style.textoCadastrar}>CADASTRAR</Text>
             </BotãoCadastrar>
 
         </ContainerCadastro>
@@ -38,6 +38,13 @@ export default function Cadastro(){
 
 const style = StyleSheet.create({
     inputTexto: {
-        marginTop: 50,
+        marginTop: 40,
+        fontSize: 25,
+        fontFamily: "CuteFont_400Regular",
     },
+    textoCadastrar: {
+        fontSize: 25,
+        fontFamily: "CuteFont_400Regular",
+        color:'#fff'
+        }
 })

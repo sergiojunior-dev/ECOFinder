@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-const Botoes = styled.View`
+export const Botoes = styled.View`
         flex-direction: row;
         width: 320px;
         margin-top : 40px;
@@ -8,7 +8,7 @@ const Botoes = styled.View`
         justify-content : space-between;
 `;
 
-const Cadastrar = styled.TouchableOpacity`
+export const Cadastrar = styled.TouchableOpacity`
         border-width: 2px;
         border-color: #77CAAF;
         width:150px;
@@ -19,19 +19,8 @@ const Cadastrar = styled.TouchableOpacity`
         font-weight: bold;
         justify-content:center;
         align-items: center;
-
-`
-const Acessar = styled(Cadastrar)`
-    background-color:#77CAAF;
-    color: #fff;
-
-
 `;
-
-
-
-export {
-    Botoes,
-    Cadastrar,
-    Acessar
-}
+export const Acessar = styled(Cadastrar)`
+        background-color:#77CAAF;
+        color: #fff;
+`;

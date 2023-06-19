@@ -1,15 +1,13 @@
 import React from "react";
-import { Text, StyleSheet, Image } from "react-native";
+import { Text, StyleSheet } from "react-native";
 import { ContainerBotoes, Botao1, Botao2, Botao3, Botao4 } from "./style";
 import { TextoMinhaLogo, ContainerLogo, ImagemLogo} from "../../styles/style-Logo"
-import { IconButton, NativeBaseProvider } from "native-base";
 
 export default function Home({navigation}) {
     const Iniciar = () => {
         
         navigation.navigate('MapScreen');
     }
-
 
     return (
         <ContainerBotoes>
@@ -23,7 +21,7 @@ export default function Home({navigation}) {
             </Botao1> 
                 
             <Botao2>
-                <Text  style={style.texto}>LIXEIRAS PRÓXIMAS</Text>
+                <Text  style={style.texto}>LIXEIRAS PROXIMAS</Text>
             </Botao2>
             
             <Botao3>
@@ -41,9 +39,7 @@ export default function Home({navigation}) {
 const style = StyleSheet.create({
     texto: {
         color: '#fff',
-        fontSize: 20,
+        fontSize: 35,
+        fontFamily: "CuteFont_400Regular",
     },
-
-
-
 })

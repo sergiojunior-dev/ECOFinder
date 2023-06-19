@@ -7,20 +7,16 @@ export const ContainerMaps = styled.SafeAreaView`
         justify-content: center;
         align-self: center;
 `;
-
 export const InputMaps = styled.TextInput`
-        border-width: 2px;
         margin-bottom: 10px;
-        margin-top: 20px; 
+        margin-top: 15px; 
         width: 320px;
-        font-size: 25px;
-        font-style: italic;
-        border-radius: 4px;
+        font-size: 35px;
+        border-radius: 2px;
         background-color: #77CAAF;
-        border-color: #77CAAF;
         color: #fff;
+        font-family: CuteFont_400Regular;
 `;
-
 export const ContainerImagens = styled.SafeAreaView`
         flex-direction:row;
         justify-content: space-around;

@@ -8,10 +8,10 @@ export const ContainerLogo = styled.SafeAreaView`
 `;
 export const TextoMinhaLogo = styled.Text`
         color: #77CAAF;
-        font-size: 40px;
+        font-size: 70px;
         align-self: center;
+        font-family: CuteFont_400Regular;
 `;
-
 export const ImagemLogo = styled.Image`
         width:50px;
         height:50px;

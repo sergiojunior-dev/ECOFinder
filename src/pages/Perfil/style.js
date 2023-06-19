@@ -10,12 +10,9 @@ export const ContainerPerfil = styled.SafeAreaView`
 `;
 export const ContainerLogoPerfil = styled.SafeAreaView`
         flex-direction:row;
-        align-items: flex-start;
         justify-content:space-between;
-        width:320;
-        
+        align-items: center;
 `;
-
 export const InputNome = styled.TextInput`
         width: 320px;
         font-size: 18px;

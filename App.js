@@ -1,5 +1,4 @@
-
-
+import {useFonts, CuteFont_400Regular} from '@expo-google-fonts/cute-font'
 import Login from './src/pages/Login/index';
 import Home from './src/pages/Home/index';
 import MapScreen from './src/pages/MapScreen/index';
@@ -15,11 +14,17 @@ const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const StackNavigate = () => {
-
+  const [fontsLoaded] = useFonts({
+      CuteFont_400Regular
+  })
+  
+  if (!fontsLoaded) {
+    return null;
+  }
   return (
   <Stack.Navigator initialRouteName='Login'>
 
-    <Stack.Screen
+      <Stack.Screen
       name='Login'
       component={Login}
       options={{
@@ -70,21 +75,10 @@ const StackNavigate = () => {
   );
 }
 
-const TabNavigate = () => {
-  return (
-    <Tab.Navigator>
-        <Tab.Screen name="Home" component={Home} />
-        {/* <Tab.Screen name="Map" component={MapScreen} /> */}
-    </Tab.Navigator>
-  )
-}
-
-
 export default function App() {
   return (
     <NavigationContainer>
       <StackNavigate></StackNavigate>
-      {/* <TabNavigate></TabNavigate> */}
     </NavigationContainer>
   );
 }

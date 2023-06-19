@@ -14,5 +14,8 @@ export const Botão = styled.TouchableOpacity`
         border-radius:4;
 `;
 
-export const Esqueci = styled.Text``;
+export const Esqueci = styled.Text`
+        font-size: 22;
+        font-family: CuteFont_400Regular;
+`;
 

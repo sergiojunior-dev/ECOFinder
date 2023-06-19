@@ -17,21 +17,20 @@ const MeuInput = (props) => {
 
 const style = StyleSheet.create({
     input: {
-        borderWidth: 2,
-        marginTop: 10,
-        padding: 10,
+        height: 50,
         width: 320,
-        fontSize: 17,
+        fontSize: 30,
         color: "#fff",
         borderRadius: 4,
         backgroundColor: "#77CAAF",
         borderColor: "#77CAAF",
+        fontFamily: "CuteFont_400Regular",
         
     },
     texto: {
-        fontSize: 20,
-        marginTop: 35,
-
+        fontSize: 35,
+        marginTop: 36,
+        fontFamily: "CuteFont_400Regular",
 },
 });
 
