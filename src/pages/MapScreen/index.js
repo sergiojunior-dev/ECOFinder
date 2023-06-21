@@ -1,10 +1,10 @@
 import React, { useEffect, useState} from "react";
 import { StyleSheet } from "react-native";
-import { ContainerMaps, InputMaps, ContainerImagens} from "./style";
+import { ContainerMaps, InputMaps, ContainerIcones} from "./style";
 import { TextoMinhaLogo, ContainerLogo, ImagemLogo, } from "../../styles/style-Logo"
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { requestForegroundPermissionsAsync, getCurrentPositionAsync, watchPositionAsync, LocationAccuracy, LocationObject } from "expo-location";
-import MapView, {Marker} from "react-native-maps";
+import MapView, {Marker,} from "react-native-maps";
 
 export default function MapScreen({ navigation }) {
     const [location, setLocation] = useState(LocationObject);
@@ -53,7 +53,7 @@ export default function MapScreen({ navigation }) {
                 <ImagemLogo source={require('../../assets/Lixeira.png')}></ImagemLogo>
             </ContainerLogo>
 
-            <InputMaps placeholder="BUSCAR"></InputMaps>
+            <InputMaps placeholder="BUSCAR" placeholderTextColor={'#fff'}></InputMaps>
             {
                 location &&
                 <MapView
@@ -71,13 +71,15 @@ export default function MapScreen({ navigation }) {
                             longitude: location.coords.longitude,
                             }}
                         />
+                        
+                        
                 </MapView>
                     
             }
-            <ContainerImagens>
+            <ContainerIcones>
                 <MaterialCommunityIcons onPress={Home} name="home" size={50} color="#77CAAF" />
                 <MaterialCommunityIcons onPress={Perfil} name="account" size={50} color="#77CAAF" />
-            </ContainerImagens>
+            </ContainerIcones>
             
         </ContainerMaps>    
     )

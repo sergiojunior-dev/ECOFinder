@@ -8,7 +8,8 @@ const MeuInput = (props) => {
             <Text style={style.texto}>{props.label}</Text>
             <TextInput
             style={style.input}
-            placeholder={props.placeHolder}
+                placeholder={props.placeHolder}
+                placeholderTextColor={'#fff'}
             secureTextEntry={props.comMascara}
             ></TextInput>
         </SafeAreaView>
@@ -24,8 +25,7 @@ const style = StyleSheet.create({
         borderRadius: 4,
         backgroundColor: "#77CAAF",
         borderColor: "#77CAAF",
-        fontFamily: "CuteFont_400Regular",
-        
+        fontFamily: "CuteFont_400Regular",  
     },
     texto: {
         fontSize: 35,

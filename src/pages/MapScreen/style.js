@@ -17,7 +17,7 @@ export const InputMaps = styled.TextInput`
         color: #fff;
         font-family: CuteFont_400Regular;
 `;
-export const ContainerImagens = styled.SafeAreaView`
+export const ContainerIcones = styled.SafeAreaView`
         flex-direction:row;
         justify-content: space-around;
         align-self:center;

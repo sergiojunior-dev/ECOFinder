@@ -22,7 +22,7 @@ export const Acesse = styled.Text`
         margin-top: 20px;
         align-self: center;
         font-family: CuteFont_400Regular;
-        font-size: 25px;
+        font-size: 26px;
 
 `;
 export const ContainerImagens = styled.SafeAreaView`

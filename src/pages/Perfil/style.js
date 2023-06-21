@@ -15,11 +15,12 @@ export const ContainerLogoPerfil = styled.SafeAreaView`
 `;
 export const InputNome = styled.TextInput`
         width: 320px;
-        font-size: 18px;
+        font-size: 25px;
         height: 50px;
         background-color: #77CAAF;
         border-color: #77CAAF;
         color: #fff;
+        font-family: CuteFont_400Regular;
 `;
 
 export const InputEmail = styled(InputNome)``;

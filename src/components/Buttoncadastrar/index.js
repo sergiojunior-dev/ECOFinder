@@ -6,18 +6,25 @@ export default function MeusBotões (props) {
     return (
         <Botoes>
             <Cadastrar onPress={props.cadastrar}>
-                <Text style={style.TextoBotoes}>CADASTRAR</Text>
+                <Text style={style.TextoCadastrar}>CADASTRAR</Text>
             </Cadastrar>
             <Acessar onPress={props.acao}>
-                <Text style={style.TextoBotoes}>ACESSAR</Text>
+                <Text style={style.TextoAcessar}>ACESSAR</Text>
             </Acessar>
         </Botoes>
     )
 };
 
 const style = StyleSheet.create({
-    TextoBotoes: {
+    TextoCadastrar: {
         fontSize: 25,
         fontFamily: "CuteFont_400Regular",
+        color: '#77CAAF',
+    },
+    TextoAcessar: {
+        fontSize: 25,
+        fontFamily: "CuteFont_400Regular",
+        color: '#fff',
     }
+
 });

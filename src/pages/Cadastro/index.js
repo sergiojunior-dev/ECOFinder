@@ -12,18 +12,21 @@ export default function Cadastro(){
 
             <Text style={style.inputTexto}>Digite seu nome</Text>
             <InputNome
-                placeholder = 'Nome'
+                placeholder='Nome'
+                placeholderTextColor={'#fff'}
             ></InputNome>
 
             <Text style={style.inputTexto}>Digite seu e-mail</Text>
             <InputEmail
-                placeholder = 'E-mail'
+                placeholder='E-mail'
+                placeholderTextColor={'#fff'}
             >
             </InputEmail>
 
             <Text style={style.inputTexto}>Digite sua senha</Text>
             <InputSenha
                 placeholder='Senha'
+                placeholderTextColor={'#fff'}
                 secureTextEntry={true}
             ></InputSenha>
 

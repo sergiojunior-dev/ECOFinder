@@ -8,6 +8,6 @@ export const Container = styled.View`
 `;
 
 export const MeuText = styled.Text`
-    font-size:  18;
+    font-size:  18px;
     color:  #77CAAF;
 `;

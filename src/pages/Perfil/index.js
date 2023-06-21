@@ -13,33 +13,38 @@ export default function Perfil ({navigation}){
             </ContainerLogoPerfil>
             <Text style={style.texto}>NOME</Text>
             <InputNome
-                placeholder = 'Nome'
+                placeholder='Nome'
+                placeholderTextColor={'#fff'}
             ></InputNome>
 
             <Text style={style.texto}>EMAIL</Text>
             <InputEmail
-                placeholder = 'E-mail'
+                placeholder='E-mail'
+                placeholderTextColor={'#fff'}
             >
             </InputEmail>
 
             <Text style={style.texto}>SENHA</Text>
             <InputSenha
                 placeholder='Senha'
+                placeholderTextColor={'#fff'}
                 secureTextEntry={true}
             ></InputSenha>
 
             <Text style={style.texto}>DATA DE NASCIMENTO</Text>
             <InputNascimento
                 placeholder='20/01/1997'
+                placeholderTextColor={'#fff'}
             ></InputNascimento>
 
             <Text style={style.texto}>PAIS/ESTADO</Text>
             <InputNacionalidade
                 placeholder='BRAZIL / RIO DE JANEIRO'
+                placeholderTextColor={'#fff'}
             ></InputNacionalidade>
 
             <BotãoSalvar>
-                <Text style={style.textoSalvar}>SALVAR MUDANCAS</Text>
+                <Text  style={style.textoSalvar}>SALVAR MUDANCAS</Text>
             </BotãoSalvar>
         </ContainerPerfil>
     
@@ -55,5 +60,6 @@ const style = StyleSheet.create({
     textoSalvar: {
         fontSize: 25,
         fontFamily: "CuteFont_400Regular",
+        color:'#fff',
     }
 });
